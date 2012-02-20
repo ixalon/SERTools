@@ -21,9 +21,6 @@
     if (self) {
         self.file = [NSFileHandle fileHandleForReadingAtPath: @"/Users/chris/capture_video_20120219132114.ser"];
         self.header = [self readSERHeader:self.file];
-        
-        //self.file = [NSFileHandle fileHandleForReadingAtPath: @"/Users/chris/20120218.raw"];
-
         self.currentFrame = nil;
         self.timer = [NSTimer timerWithTimeInterval:0.05 target:self selector:@selector(incrementFrame:) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
@@ -90,8 +87,8 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
     if(self.currentFrame) {
-        float fScale = (float)self.visibleRect.size.height / 1440.0;
-        float fWidth = 1920 * fScale;
+        float fScale = (float)self.visibleRect.size.height / self.header.uiImageHeight;
+        float fWidth = self.header.uiImageWidth * fScale;
         float fHeight = self.visibleRect.size.height;
         float fLeft = ((float)self.visibleRect.size.width - fWidth) / 2.0;
         float fTop = 0;
