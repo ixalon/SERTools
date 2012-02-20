@@ -1,0 +1,3 @@
+[submodule "CaptureIIDC"]
+	path = CaptureIIDC
+	url = git@github.com:ixalon/ofxVideoGrabber.git
