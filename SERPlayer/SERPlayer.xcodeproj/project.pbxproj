@@ -57,6 +57,7 @@
 		8355AC4914F2DAEC007D4881 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		8355AC4A14F2DAEC007D4881 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		8355AC4B14F2DAEC007D4881 /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
+		8355AC5314F2E4E0007D4881 /* SER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SER.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +131,7 @@
 				8355AC2514F2DA9D007D4881 /* AppDelegate.h */,
 				8355AC2614F2DA9D007D4881 /* AppDelegate.m */,
 				8355AC2814F2DA9D007D4881 /* MainMenu.xib */,
+				8355AC5314F2E4E0007D4881 /* SER.h */,
 				8355AC1A14F2DA9D007D4881 /* Supporting Files */,
 			);
 			path = SERPlayer;

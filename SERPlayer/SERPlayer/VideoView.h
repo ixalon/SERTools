@@ -7,13 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SER.h"
 
 @interface VideoView : NSView
 
 @property (retain, strong) NSFileHandle *file;
 @property (assign) CGImageRef currentFrame;
 @property (retain, strong) NSTimer *timer;
-
+@property (assign) SERHeader header;
+- (SERHeader)readSERHeader:(NSFileHandle*)f;
 - (void)getNextFrame;
 
 @end

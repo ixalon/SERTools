@@ -13,12 +13,15 @@
 @synthesize file = _file;
 @synthesize currentFrame = _currentFrame;
 @synthesize timer = _timer;
+@synthesize header = _header;
 
 - (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.file = [NSFileHandle fileHandleForReadingAtPath: @"/Users/chris/capture_video_20120219132114.raw"];
+        self.file = [NSFileHandle fileHandleForReadingAtPath: @"/Users/chris/capture_video_20120219132114.ser"];
+        self.header = [self readSERHeader:self.file];
+        
         //self.file = [NSFileHandle fileHandleForReadingAtPath: @"/Users/chris/20120218.raw"];
 
         self.currentFrame = nil;
@@ -42,16 +45,25 @@
     [self setNeedsDisplay:YES];
 }
 
+- (SERHeader)readSERHeader:(NSFileHandle*)f {
+    SERHeader header;
+    
+    NSData *data = [f readDataOfLength:sizeof(header)];
+    [data getBytes:&header length:sizeof(header)];
+    
+    return header;
+}
+
 - (void)getNextFrame {
     if(self.currentFrame) {
         CFRelease(self.currentFrame);
         self.currentFrame = nil;
     }
     
-    int width = 1920;
-    int height = 1440;
-    int bpp = 1;
-    int frameSize = width * height * bpp;
+    int width = self.header.uiImageWidth;
+    int height = self.header.uiImageHeight;
+    int bpp = self.header.uiPixelDepth;
+    int frameSize = width * height * bpp / 8;
     
     NSData *data = [self.file readDataOfLength:frameSize];
         
@@ -62,8 +74,8 @@
                                                            (void*)[data bytes],
                                                            width,
                                                            height,
-                                                           8, // bitsPerComponent
-                                                           1*width, // bytesPerRow
+                                                           bpp, // bitsPerComponent
+                                                           (bpp*width)/8, // bytesPerRow
                                                            colorSpace,
                                                            kCGImageAlphaNone);
         
