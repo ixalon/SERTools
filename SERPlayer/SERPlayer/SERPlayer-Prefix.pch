@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SERPlayer' target in the 'SERPlayer' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
