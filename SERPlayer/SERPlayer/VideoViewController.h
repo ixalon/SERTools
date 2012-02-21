@@ -10,4 +10,6 @@
 
 @interface VideoViewController : NSViewController
 
+- (BOOL)loadVideo:(NSString*)f;
+
 @end

@@ -15,9 +15,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    self.video = [[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:nil];
-    self.window.contentView = _video.view;
-    [self.window makeKeyAndOrderFront:_video.view];
+    //self.video = [[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:nil];
+    //self.window.contentView = _video.view;
+    //[self.window makeKeyAndOrderFront:_video.view];
 }
 
 @end

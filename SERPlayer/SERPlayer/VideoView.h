@@ -15,7 +15,8 @@
 @property (assign) CGImageRef currentFrame;
 @property (retain, strong) NSTimer *timer;
 @property (assign) SERHeader header;
-- (SERHeader)readSERHeader:(NSFileHandle*)f;
+- (BOOL)loadVideo:(NSString*)f;
+- (BOOL)readSERHeader;
 - (void)getNextFrame;
 
 @end

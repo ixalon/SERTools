@@ -7,6 +7,7 @@
 //
 
 #import "VideoViewController.h"
+#import "VideoView.h"
 
 @implementation VideoViewController
 
@@ -20,4 +21,7 @@
     return self;
 }
 
+- (BOOL)loadVideo:(NSString*)f {
+    return [((VideoView*)self.view) loadVideo:f];
+}
 @end

@@ -19,8 +19,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.file = [NSFileHandle fileHandleForReadingAtPath: @"/Users/chris/capture_video_20120219132114.ser"];
-        self.header = [self readSERHeader:self.file];
         self.currentFrame = nil;
         self.timer = [NSTimer timerWithTimeInterval:0.05 target:self selector:@selector(incrementFrame:) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
@@ -42,16 +40,29 @@
     [self setNeedsDisplay:YES];
 }
 
-- (SERHeader)readSERHeader:(NSFileHandle*)f {
+- (BOOL)loadVideo:(NSString*)f {
+    self.file = [NSFileHandle fileHandleForReadingAtPath:f];
+    return [self readSERHeader];
+}
+- (BOOL)readSERHeader {
     SERHeader header;
     
-    NSData *data = [f readDataOfLength:sizeof(header)];
-    [data getBytes:&header length:sizeof(header)];
-    
-    return header;
+    @try {
+        [self.file seekToFileOffset:0];
+        NSData *data = [self.file readDataOfLength:sizeof(header)];
+        [data getBytes:&header length:sizeof(header)];
+        self.header = header;
+        return self.header.uiFrameCount > 0;
+    }
+    @catch (NSException *exception) {
+        return NO;
+    }
 }
 
 - (void)getNextFrame {
+    if(!self.file) {
+        return;
+    }
     if(self.currentFrame) {
         CFRelease(self.currentFrame);
         self.currentFrame = nil;
