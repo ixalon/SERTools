@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8355AC1414F2DA9D007D4881 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355AC1314F2DA9D007D4881 /* Cocoa.framework */; };
-		8355AC1E14F2DA9D007D4881 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8355AC1C14F2DA9D007D4881 /* InfoPlist.strings */; };
 		8355AC2014F2DA9D007D4881 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8355AC1F14F2DA9D007D4881 /* main.m */; };
-		8355AC2414F2DA9D007D4881 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8355AC2214F2DA9D007D4881 /* Credits.rtf */; };
 		8355AC2714F2DA9D007D4881 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8355AC2614F2DA9D007D4881 /* AppDelegate.m */; };
-		8355AC2A14F2DA9D007D4881 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8355AC2814F2DA9D007D4881 /* MainMenu.xib */; };
 		8355AC3214F2DA9D007D4881 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355AC3114F2DA9D007D4881 /* SenTestingKit.framework */; };
 		8355AC3314F2DA9D007D4881 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355AC1314F2DA9D007D4881 /* Cocoa.framework */; };
 		8355AC3B14F2DA9D007D4881 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8355AC3914F2DA9D007D4881 /* InfoPlist.strings */; };
@@ -20,6 +17,14 @@
 		8355AC4C14F2DAEC007D4881 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8355AC4814F2DAEC007D4881 /* VideoView.m */; };
 		8355AC4D14F2DAEC007D4881 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8355AC4A14F2DAEC007D4881 /* VideoViewController.m */; };
 		8355AC4E14F2DAEC007D4881 /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8355AC4B14F2DAEC007D4881 /* VideoViewController.xib */; };
+		83AB9AD414F3271200357901 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355AC1314F2DA9D007D4881 /* Cocoa.framework */; };
+		83AB9AF014F3271300357901 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355AC3114F2DA9D007D4881 /* SenTestingKit.framework */; };
+		83AB9AF114F3271300357901 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355AC1314F2DA9D007D4881 /* Cocoa.framework */; };
+		83AB9B0C14F329B500357901 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AB9B0B14F329B500357901 /* Document.m */; };
+		83AB9B1614F329C900357901 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 83AB9B0E14F329C900357901 /* Credits.rtf */; };
+		83AB9B1714F329C900357901 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83AB9B1014F329C900357901 /* Document.xib */; };
+		83AB9B1814F329C900357901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83AB9B1214F329C900357901 /* InfoPlist.strings */; };
+		83AB9B1914F329C900357901 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83AB9B1414F329C900357901 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +35,13 @@
 			remoteGlobalIDString = 8355AC0E14F2DA9D007D4881;
 			remoteInfo = SERPlayer;
 		};
+		83AB9AF214F3271300357901 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8355AC0614F2DA9D007D4881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83AB9AD114F3271200357901;
+			remoteInfo = SERPlayer2;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +51,10 @@
 		8355AC1714F2DA9D007D4881 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8355AC1814F2DA9D007D4881 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8355AC1B14F2DA9D007D4881 /* SERPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SERPlayer-Info.plist"; sourceTree = "<group>"; };
-		8355AC1D14F2DA9D007D4881 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8355AC1F14F2DA9D007D4881 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8355AC2114F2DA9D007D4881 /* SERPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SERPlayer-Prefix.pch"; sourceTree = "<group>"; };
-		8355AC2314F2DA9D007D4881 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		8355AC2514F2DA9D007D4881 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8355AC2614F2DA9D007D4881 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8355AC2914F2DA9D007D4881 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8355AC3014F2DA9D007D4881 /* SERPlayerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SERPlayerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8355AC3114F2DA9D007D4881 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8355AC3814F2DA9D007D4881 /* SERPlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SERPlayerTests-Info.plist"; sourceTree = "<group>"; };
@@ -58,6 +67,14 @@
 		8355AC4A14F2DAEC007D4881 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		8355AC4B14F2DAEC007D4881 /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
 		8355AC5314F2E4E0007D4881 /* SER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SER.h; sourceTree = "<group>"; };
+		83AB9AD214F3271200357901 /* SERPlayer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SERPlayer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83AB9AEF14F3271300357901 /* SERPlayer2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SERPlayer2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83AB9B0A14F329B500357901 /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		83AB9B0B14F329B500357901 /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		83AB9B0F14F329C900357901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Credits.rtf; sourceTree = "<group>"; };
+		83AB9B1114F329C900357901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Document.xib; sourceTree = "<group>"; };
+		83AB9B1314F329C900357901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		83AB9B1514F329C900357901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +92,23 @@
 			files = (
 				8355AC3214F2DA9D007D4881 /* SenTestingKit.framework in Frameworks */,
 				8355AC3314F2DA9D007D4881 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83AB9ACF14F3271200357901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83AB9AD414F3271200357901 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83AB9AEB14F3271300357901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83AB9AF014F3271300357901 /* SenTestingKit.framework in Frameworks */,
+				83AB9AF114F3271300357901 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +130,8 @@
 			children = (
 				8355AC0F14F2DA9D007D4881 /* SERPlayer.app */,
 				8355AC3014F2DA9D007D4881 /* SERPlayerTests.octest */,
+				83AB9AD214F3271200357901 /* SERPlayer2.app */,
+				83AB9AEF14F3271300357901 /* SERPlayer2Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +159,8 @@
 		8355AC1914F2DA9D007D4881 /* SERPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				83AB9B0A14F329B500357901 /* Document.h */,
+				83AB9B0B14F329B500357901 /* Document.m */,
 				8355AC4714F2DAEC007D4881 /* VideoView.h */,
 				8355AC4814F2DAEC007D4881 /* VideoView.m */,
 				8355AC4914F2DAEC007D4881 /* VideoViewController.h */,
@@ -130,7 +168,6 @@
 				8355AC4B14F2DAEC007D4881 /* VideoViewController.xib */,
 				8355AC2514F2DA9D007D4881 /* AppDelegate.h */,
 				8355AC2614F2DA9D007D4881 /* AppDelegate.m */,
-				8355AC2814F2DA9D007D4881 /* MainMenu.xib */,
 				8355AC5314F2E4E0007D4881 /* SER.h */,
 				8355AC1A14F2DA9D007D4881 /* Supporting Files */,
 			);
@@ -140,11 +177,10 @@
 		8355AC1A14F2DA9D007D4881 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83AB9B0D14F329C900357901 /* en.lproj */,
 				8355AC1B14F2DA9D007D4881 /* SERPlayer-Info.plist */,
-				8355AC1C14F2DA9D007D4881 /* InfoPlist.strings */,
 				8355AC1F14F2DA9D007D4881 /* main.m */,
 				8355AC2114F2DA9D007D4881 /* SERPlayer-Prefix.pch */,
-				8355AC2214F2DA9D007D4881 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -166,6 +202,17 @@
 				8355AC3914F2DA9D007D4881 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83AB9B0D14F329C900357901 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				83AB9B0E14F329C900357901 /* Credits.rtf */,
+				83AB9B1014F329C900357901 /* Document.xib */,
+				83AB9B1214F329C900357901 /* InfoPlist.strings */,
+				83AB9B1414F329C900357901 /* MainMenu.xib */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +254,42 @@
 			productReference = 8355AC3014F2DA9D007D4881 /* SERPlayerTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		83AB9AD114F3271200357901 /* SERPlayer2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83AB9B0114F3271300357901 /* Build configuration list for PBXNativeTarget "SERPlayer2" */;
+			buildPhases = (
+				83AB9ACE14F3271200357901 /* Sources */,
+				83AB9ACF14F3271200357901 /* Frameworks */,
+				83AB9AD014F3271200357901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SERPlayer2;
+			productName = SERPlayer2;
+			productReference = 83AB9AD214F3271200357901 /* SERPlayer2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83AB9AEE14F3271300357901 /* SERPlayer2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83AB9B0214F3271300357901 /* Build configuration list for PBXNativeTarget "SERPlayer2Tests" */;
+			buildPhases = (
+				83AB9AEA14F3271300357901 /* Sources */,
+				83AB9AEB14F3271300357901 /* Frameworks */,
+				83AB9AEC14F3271300357901 /* Resources */,
+				83AB9AED14F3271300357901 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83AB9AF314F3271300357901 /* PBXTargetDependency */,
+			);
+			name = SERPlayer2Tests;
+			productName = SERPlayer2Tests;
+			productReference = 83AB9AEF14F3271300357901 /* SERPlayer2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -229,6 +312,8 @@
 			targets = (
 				8355AC0E14F2DA9D007D4881 /* SERPlayer */,
 				8355AC2F14F2DA9D007D4881 /* SERPlayerTests */,
+				83AB9AD114F3271200357901 /* SERPlayer2 */,
+				83AB9AEE14F3271300357901 /* SERPlayer2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,10 +323,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8355AC1E14F2DA9D007D4881 /* InfoPlist.strings in Resources */,
-				8355AC2414F2DA9D007D4881 /* Credits.rtf in Resources */,
-				8355AC2A14F2DA9D007D4881 /* MainMenu.xib in Resources */,
 				8355AC4E14F2DAEC007D4881 /* VideoViewController.xib in Resources */,
+				83AB9B1614F329C900357901 /* Credits.rtf in Resources */,
+				83AB9B1714F329C900357901 /* Document.xib in Resources */,
+				83AB9B1814F329C900357901 /* InfoPlist.strings in Resources */,
+				83AB9B1914F329C900357901 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,10 +339,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83AB9AD014F3271200357901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83AB9AEC14F3271300357901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		8355AC2E14F2DA9D007D4881 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		83AB9AED14F3271300357901 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,6 +393,7 @@
 				8355AC2714F2DA9D007D4881 /* AppDelegate.m in Sources */,
 				8355AC4C14F2DAEC007D4881 /* VideoView.m in Sources */,
 				8355AC4D14F2DAEC007D4881 /* VideoViewController.m in Sources */,
+				83AB9B0C14F329B500357901 /* Document.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +405,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83AB9ACE14F3271200357901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83AB9AEA14F3271300357901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,39 +427,52 @@
 			target = 8355AC0E14F2DA9D007D4881 /* SERPlayer */;
 			targetProxy = 8355AC3414F2DA9D007D4881 /* PBXContainerItemProxy */;
 		};
+		83AB9AF314F3271300357901 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83AB9AD114F3271200357901 /* SERPlayer2 */;
+			targetProxy = 83AB9AF214F3271300357901 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8355AC1C14F2DA9D007D4881 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8355AC1D14F2DA9D007D4881 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8355AC2214F2DA9D007D4881 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8355AC2314F2DA9D007D4881 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		8355AC2814F2DA9D007D4881 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8355AC2914F2DA9D007D4881 /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 		8355AC3914F2DA9D007D4881 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8355AC3A14F2DA9D007D4881 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		83AB9B0E14F329C900357901 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83AB9B0F14F329C900357901 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		83AB9B1014F329C900357901 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83AB9B1114F329C900357901 /* en */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		83AB9B1214F329C900357901 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83AB9B1314F329C900357901 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		83AB9B1414F329C900357901 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83AB9B1514F329C900357901 /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -434,6 +575,56 @@
 			};
 			name = Release;
 		};
+		83AB9AFD14F3271300357901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SERPlayer2/SERPlayer2-Prefix.pch";
+				INFOPLIST_FILE = "SERPlayer2/SERPlayer2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		83AB9AFE14F3271300357901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SERPlayer2/SERPlayer2-Prefix.pch";
+				INFOPLIST_FILE = "SERPlayer2/SERPlayer2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		83AB9AFF14F3271300357901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SERPlayer2.app/Contents/MacOS/SERPlayer2";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SERPlayer2/SERPlayer2-Prefix.pch";
+				INFOPLIST_FILE = "SERPlayer2Tests/SERPlayer2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		83AB9B0014F3271300357901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SERPlayer2.app/Contents/MacOS/SERPlayer2";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SERPlayer2/SERPlayer2-Prefix.pch";
+				INFOPLIST_FILE = "SERPlayer2Tests/SERPlayer2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -453,6 +644,7 @@
 				8355AC4314F2DA9D007D4881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8355AC4414F2DA9D007D4881 /* Build configuration list for PBXNativeTarget "SERPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +653,25 @@
 				8355AC4614F2DA9D007D4881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83AB9B0114F3271300357901 /* Build configuration list for PBXNativeTarget "SERPlayer2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83AB9AFD14F3271300357901 /* Debug */,
+				83AB9AFE14F3271300357901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83AB9B0214F3271300357901 /* Build configuration list for PBXNativeTarget "SERPlayer2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83AB9AFF14F3271300357901 /* Debug */,
+				83AB9B0014F3271300357901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
