@@ -7,17 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "VideoDocumentController.h"
+#import "camera.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize video = _video;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    //self.video = [[VideoViewController alloc] initWithNibName:@"VideoViewController" bundle:nil];
-    //self.window.contentView = _video.view;
-    //[self.window makeKeyAndOrderFront:_video.view];
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+}
+
+-(void) applicationWillTerminate:(NSNotification *)notification {
 }
 
 @end

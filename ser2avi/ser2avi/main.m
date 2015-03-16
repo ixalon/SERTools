@@ -15,11 +15,11 @@
 #define AVIF_WASCAPTUREFILE     0x00010000
 #define AVIF_COPYRIGHTED        0x00020000
 
-/*
+
 void raw2ser() {
-    NSFileHandle *input = [NSFileHandle fileHandleForReadingAtPath: @"/Users/chris/capture_video_20120219132114.raw"];
-    [[NSFileManager defaultManager] createFileAtPath:@"/Users/chris/capture_video_20120219132114.ser" contents:nil attributes:nil];
-    NSFileHandle *output = [NSFileHandle fileHandleForWritingAtPath: @"/Users/chris/capture_video_20120219132114.ser"];
+    NSFileHandle *input = [NSFileHandle fileHandleForReadingAtPath: @"/Users/chris/20120218.raw"];
+    [[NSFileManager defaultManager] createFileAtPath:@"/Users/chris/20120218.ser" contents:nil attributes:nil];
+    NSFileHandle *output = [NSFileHandle fileHandleForWritingAtPath: @"/Users/chris/20120218.ser"];
     
     int width = 1920;
     int height = 1440;
@@ -27,7 +27,7 @@ void raw2ser() {
     int frameSize = width * height * bpp;
     
     NSFileManager* fm = [NSFileManager defaultManager];
-    unsigned long long fileSize = [[fm attributesOfItemAtPath:@"/Users/chris/capture_video_20120219132114.raw" error:NULL] fileSize];
+    unsigned long long fileSize = [[fm attributesOfItemAtPath:@"/Users/chris/20120218.raw" error:NULL] fileSize];
     
     unsigned long long totalFrames = (fileSize / frameSize);
     //[input seekToFileOffset:frameSize * 700];
@@ -60,7 +60,7 @@ void raw2ser() {
     [input closeFile];
     [output closeFile];
 }
-*/
+
 
 int main (int argc, const char * argv[])
 {
@@ -68,7 +68,7 @@ int main (int argc, const char * argv[])
     @autoreleasepool {
         
         ser2avi();
-        
+        //raw2ser();
     }
     return 0;
 }
@@ -82,9 +82,9 @@ SERHeader readSERHeader(NSFileHandle *f) {
     return header;
 }
 void ser2avi() {
-    NSFileHandle *input = [NSFileHandle fileHandleForReadingAtPath: @"/Users/chris/capture_video_20120219132114.ser"];
-    [[NSFileManager defaultManager] createFileAtPath:@"/Users/chris/capture_video_20120219132114.avi" contents:nil attributes:nil];
-    NSFileHandle *output = [NSFileHandle fileHandleForWritingAtPath: @"/Users/chris/capture_video_20120219132114.avi"];
+    NSFileHandle *input = [NSFileHandle fileHandleForReadingAtPath: @"/Users/chris/Documents/Virtual\ Machines.localized/Shared/capture_video_20120606053606.ser"];
+    [[NSFileManager defaultManager] createFileAtPath:@"/Users/chris/capture_video_20120606053606.avi" contents:nil attributes:nil];
+    NSFileHandle *output = [NSFileHandle fileHandleForWritingAtPath: @"/Users/chris/capture_video_20120606053606.avi"];
     
     SERHeader header = readSERHeader(input);
     

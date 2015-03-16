@@ -7,16 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "SER.h"
+#import "Document.h"
 
 @interface VideoView : NSView
 
-@property (retain, strong) NSFileHandle *file;
-@property (assign) CGImageRef currentFrame;
 @property (retain, strong) NSTimer *timer;
-@property (assign) SERHeader header;
-- (BOOL)loadVideo:(NSString*)f;
-- (BOOL)readSERHeader;
-- (void)getNextFrame;
+@property (retain, strong) Document *document;
+@property (assign) CGPoint zoomCenter;
+@property (retain, strong) NSTrackingArea *trackingArea;
+
+- (void)setFps:(int)fps;
 
 @end

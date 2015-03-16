@@ -7,12 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "VideoViewController.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate> 
 
 @property (assign) IBOutlet NSWindow *window;
-
-@property (retain, strong) VideoViewController *video;
 
 @end

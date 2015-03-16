@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8314B25514F7E94600261754 /* VideoDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8314B25414F7E94500261754 /* VideoDocumentController.m */; };
+		8314B27414F7F2F400261754 /* libdc1394.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314B27314F7F2F400261754 /* libdc1394.a */; };
+		8314B27614F7F37A00261754 /* libusb-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314B27514F7F37A00261754 /* libusb-1.0.dylib */; };
+		8314B27814F7F38700261754 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8314B27714F7F38700261754 /* IOKit.framework */; };
 		8355AC1414F2DA9D007D4881 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355AC1314F2DA9D007D4881 /* Cocoa.framework */; };
 		8355AC2014F2DA9D007D4881 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8355AC1F14F2DA9D007D4881 /* main.m */; };
 		8355AC2714F2DA9D007D4881 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8355AC2614F2DA9D007D4881 /* AppDelegate.m */; };
@@ -15,16 +19,18 @@
 		8355AC3B14F2DA9D007D4881 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8355AC3914F2DA9D007D4881 /* InfoPlist.strings */; };
 		8355AC3E14F2DA9D007D4881 /* SERPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8355AC3D14F2DA9D007D4881 /* SERPlayerTests.m */; };
 		8355AC4C14F2DAEC007D4881 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8355AC4814F2DAEC007D4881 /* VideoView.m */; };
-		8355AC4D14F2DAEC007D4881 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8355AC4A14F2DAEC007D4881 /* VideoViewController.m */; };
-		8355AC4E14F2DAEC007D4881 /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8355AC4B14F2DAEC007D4881 /* VideoViewController.xib */; };
-		83AB9AD414F3271200357901 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355AC1314F2DA9D007D4881 /* Cocoa.framework */; };
-		83AB9AF014F3271300357901 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355AC3114F2DA9D007D4881 /* SenTestingKit.framework */; };
-		83AB9AF114F3271300357901 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8355AC1314F2DA9D007D4881 /* Cocoa.framework */; };
 		83AB9B0C14F329B500357901 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AB9B0B14F329B500357901 /* Document.m */; };
 		83AB9B1614F329C900357901 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 83AB9B0E14F329C900357901 /* Credits.rtf */; };
 		83AB9B1714F329C900357901 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83AB9B1014F329C900357901 /* Document.xib */; };
 		83AB9B1814F329C900357901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83AB9B1214F329C900357901 /* InfoPlist.strings */; };
 		83AB9B1914F329C900357901 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83AB9B1414F329C900357901 /* MainMenu.xib */; };
+		83AB9B1C14F3DA8700357901 /* VideoControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AB9B1B14F3DA8600357901 /* VideoControlsView.m */; };
+		83C754B714F823D2009F86BE /* CameraWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C754B514F823D2009F86BE /* CameraWindow.xib */; };
+		83C754BA14F8573A009F86BE /* DC1394.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C754B914F8573A009F86BE /* DC1394.m */; };
+		83C754BD14F8575C009F86BE /* DC1394Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C754BC14F8575C009F86BE /* DC1394Camera.m */; };
+		83C754C014F874AD009F86BE /* DC1394Feature.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C754BF14F874AD009F86BE /* DC1394Feature.m */; };
+		83C754C514F91460009F86BE /* DC1394DefaultFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C754C414F91460009F86BE /* DC1394DefaultFeature.m */; };
+		83C754C814F91484009F86BE /* DC1394TriggerFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C754C714F91484009F86BE /* DC1394TriggerFeature.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,16 +41,31 @@
 			remoteGlobalIDString = 8355AC0E14F2DA9D007D4881;
 			remoteInfo = SERPlayer;
 		};
-		83AB9AF214F3271300357901 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8355AC0614F2DA9D007D4881 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83AB9AD114F3271200357901;
-			remoteInfo = SERPlayer2;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8314B25314F7E94500261754 /* VideoDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDocumentController.h; sourceTree = "<group>"; };
+		8314B25414F7E94500261754 /* VideoDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDocumentController.m; sourceTree = "<group>"; };
+		8314B25814F7EF6600261754 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		8314B25914F7EF6600261754 /* capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = capture.h; sourceTree = "<group>"; };
+		8314B25A14F7EF6600261754 /* control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = control.h; sourceTree = "<group>"; };
+		8314B25B14F7EF6600261754 /* conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conversions.h; sourceTree = "<group>"; };
+		8314B25C14F7EF6600261754 /* dc1394.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dc1394.h; sourceTree = "<group>"; };
+		8314B25D14F7EF6600261754 /* format7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = format7.h; sourceTree = "<group>"; };
+		8314B25E14F7EF6600261754 /* iso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iso.h; sourceTree = "<group>"; };
+		8314B26114F7EF6600261754 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		8314B26314F7EF6600261754 /* capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = capture.h; sourceTree = "<group>"; };
+		8314B26414F7EF6600261754 /* register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = register.h; sourceTree = "<group>"; };
+		8314B26514F7EF6600261754 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		8314B26714F7EF6600261754 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		8314B26914F7EF6600261754 /* avt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avt.h; sourceTree = "<group>"; };
+		8314B26A14F7EF6600261754 /* basler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basler.h; sourceTree = "<group>"; };
+		8314B26B14F7EF6600261754 /* basler_sff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basler_sff.h; sourceTree = "<group>"; };
+		8314B26C14F7EF6600261754 /* pixelink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixelink.h; sourceTree = "<group>"; };
+		8314B26D14F7EF6600261754 /* video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video.h; sourceTree = "<group>"; };
+		8314B27314F7F2F400261754 /* libdc1394.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdc1394.a; sourceTree = "<group>"; };
+		8314B27514F7F37A00261754 /* libusb-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libusb-1.0.dylib"; path = "usr/local/lib/libusb-1.0.dylib"; sourceTree = SDKROOT; };
+		8314B27714F7F38700261754 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		8355AC0F14F2DA9D007D4881 /* SERPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SERPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8355AC1314F2DA9D007D4881 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8355AC1614F2DA9D007D4881 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -63,18 +84,26 @@
 		8355AC3D14F2DA9D007D4881 /* SERPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SERPlayerTests.m; sourceTree = "<group>"; };
 		8355AC4714F2DAEC007D4881 /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
 		8355AC4814F2DAEC007D4881 /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
-		8355AC4914F2DAEC007D4881 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
-		8355AC4A14F2DAEC007D4881 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
-		8355AC4B14F2DAEC007D4881 /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
 		8355AC5314F2E4E0007D4881 /* SER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SER.h; sourceTree = "<group>"; };
-		83AB9AD214F3271200357901 /* SERPlayer2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SERPlayer2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83AB9AEF14F3271300357901 /* SERPlayer2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SERPlayer2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AB9B0A14F329B500357901 /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
 		83AB9B0B14F329B500357901 /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
 		83AB9B0F14F329C900357901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Credits.rtf; sourceTree = "<group>"; };
 		83AB9B1114F329C900357901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Document.xib; sourceTree = "<group>"; };
 		83AB9B1314F329C900357901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		83AB9B1514F329C900357901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainMenu.xib; sourceTree = "<group>"; };
+		83AB9B1A14F3DA8600357901 /* VideoControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoControlsView.h; sourceTree = "<group>"; };
+		83AB9B1B14F3DA8600357901 /* VideoControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoControlsView.m; sourceTree = "<group>"; };
+		83C754B614F823D2009F86BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = CameraWindow.xib; sourceTree = "<group>"; };
+		83C754B814F8573A009F86BE /* DC1394.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC1394.h; sourceTree = "<group>"; };
+		83C754B914F8573A009F86BE /* DC1394.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC1394.m; sourceTree = "<group>"; };
+		83C754BB14F8575C009F86BE /* DC1394Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC1394Camera.h; sourceTree = "<group>"; };
+		83C754BC14F8575C009F86BE /* DC1394Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC1394Camera.m; sourceTree = "<group>"; };
+		83C754BE14F874AD009F86BE /* DC1394Feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC1394Feature.h; sourceTree = "<group>"; };
+		83C754BF14F874AD009F86BE /* DC1394Feature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC1394Feature.m; sourceTree = "<group>"; };
+		83C754C314F91460009F86BE /* DC1394DefaultFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC1394DefaultFeature.h; sourceTree = "<group>"; };
+		83C754C414F91460009F86BE /* DC1394DefaultFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC1394DefaultFeature.m; sourceTree = "<group>"; };
+		83C754C614F91484009F86BE /* DC1394TriggerFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC1394TriggerFeature.h; sourceTree = "<group>"; };
+		83C754C714F91484009F86BE /* DC1394TriggerFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC1394TriggerFeature.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +111,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8314B27814F7F38700261754 /* IOKit.framework in Frameworks */,
+				8314B27614F7F37A00261754 /* libusb-1.0.dylib in Frameworks */,
 				8355AC1414F2DA9D007D4881 /* Cocoa.framework in Frameworks */,
+				8314B27414F7F2F400261754 /* libdc1394.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,29 +127,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83AB9ACF14F3271200357901 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83AB9AD414F3271200357901 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83AB9AEB14F3271300357901 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83AB9AF014F3271300357901 /* SenTestingKit.framework in Frameworks */,
-				83AB9AF114F3271300357901 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8314B25714F7EF6600261754 /* dc1394 */ = {
+			isa = PBXGroup;
+			children = (
+				8314B27314F7F2F400261754 /* libdc1394.a */,
+				8314B25814F7EF6600261754 /* camera.h */,
+				8314B25914F7EF6600261754 /* capture.h */,
+				8314B25A14F7EF6600261754 /* control.h */,
+				8314B25B14F7EF6600261754 /* conversions.h */,
+				8314B25C14F7EF6600261754 /* dc1394.h */,
+				8314B25D14F7EF6600261754 /* format7.h */,
+				8314B25E14F7EF6600261754 /* iso.h */,
+				8314B25F14F7EF6600261754 /* juju */,
+				8314B26014F7EF6600261754 /* linux */,
+				8314B26114F7EF6600261754 /* log.h */,
+				8314B26214F7EF6600261754 /* macosx */,
+				8314B26414F7EF6600261754 /* register.h */,
+				8314B26514F7EF6600261754 /* types.h */,
+				8314B26614F7EF6600261754 /* usb */,
+				8314B26714F7EF6600261754 /* utils.h */,
+				8314B26814F7EF6600261754 /* vendor */,
+				8314B26D14F7EF6600261754 /* video.h */,
+			);
+			path = dc1394;
+			sourceTree = "<group>";
+		};
+		8314B25F14F7EF6600261754 /* juju */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = juju;
+			sourceTree = "<group>";
+		};
+		8314B26014F7EF6600261754 /* linux */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = linux;
+			sourceTree = "<group>";
+		};
+		8314B26214F7EF6600261754 /* macosx */ = {
+			isa = PBXGroup;
+			children = (
+				8314B26314F7EF6600261754 /* capture.h */,
+			);
+			path = macosx;
+			sourceTree = "<group>";
+		};
+		8314B26614F7EF6600261754 /* usb */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = usb;
+			sourceTree = "<group>";
+		};
+		8314B26814F7EF6600261754 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				8314B26914F7EF6600261754 /* avt.h */,
+				8314B26A14F7EF6600261754 /* basler.h */,
+				8314B26B14F7EF6600261754 /* basler_sff.h */,
+				8314B26C14F7EF6600261754 /* pixelink.h */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
 		8355AC0414F2DA9D007D4881 = {
 			isa = PBXGroup;
 			children = (
+				8314B27714F7F38700261754 /* IOKit.framework */,
+				8314B27514F7F37A00261754 /* libusb-1.0.dylib */,
 				8355AC1914F2DA9D007D4881 /* SERPlayer */,
 				8355AC3614F2DA9D007D4881 /* SERPlayerTests */,
 				8355AC1214F2DA9D007D4881 /* Frameworks */,
@@ -130,8 +212,6 @@
 			children = (
 				8355AC0F14F2DA9D007D4881 /* SERPlayer.app */,
 				8355AC3014F2DA9D007D4881 /* SERPlayerTests.octest */,
-				83AB9AD214F3271200357901 /* SERPlayer2.app */,
-				83AB9AEF14F3271300357901 /* SERPlayer2Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +229,7 @@
 		8355AC1514F2DA9D007D4881 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8314B25714F7EF6600261754 /* dc1394 */,
 				8355AC1614F2DA9D007D4881 /* AppKit.framework */,
 				8355AC1714F2DA9D007D4881 /* CoreData.framework */,
 				8355AC1814F2DA9D007D4881 /* Foundation.framework */,
@@ -159,17 +240,19 @@
 		8355AC1914F2DA9D007D4881 /* SERPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				83AB9B0A14F329B500357901 /* Document.h */,
+				83C754C214F9128D009F86BE /* DC1394 */,
 				83AB9B0B14F329B500357901 /* Document.m */,
+				83AB9B0A14F329B500357901 /* Document.h */,
 				8355AC4714F2DAEC007D4881 /* VideoView.h */,
 				8355AC4814F2DAEC007D4881 /* VideoView.m */,
-				8355AC4914F2DAEC007D4881 /* VideoViewController.h */,
-				8355AC4A14F2DAEC007D4881 /* VideoViewController.m */,
-				8355AC4B14F2DAEC007D4881 /* VideoViewController.xib */,
 				8355AC2514F2DA9D007D4881 /* AppDelegate.h */,
 				8355AC2614F2DA9D007D4881 /* AppDelegate.m */,
 				8355AC5314F2E4E0007D4881 /* SER.h */,
 				8355AC1A14F2DA9D007D4881 /* Supporting Files */,
+				83AB9B1A14F3DA8600357901 /* VideoControlsView.h */,
+				83AB9B1B14F3DA8600357901 /* VideoControlsView.m */,
+				8314B25314F7E94500261754 /* VideoDocumentController.h */,
+				8314B25414F7E94500261754 /* VideoDocumentController.m */,
 			);
 			path = SERPlayer;
 			sourceTree = "<group>";
@@ -211,8 +294,34 @@
 				83AB9B1014F329C900357901 /* Document.xib */,
 				83AB9B1214F329C900357901 /* InfoPlist.strings */,
 				83AB9B1414F329C900357901 /* MainMenu.xib */,
+				83C754B514F823D2009F86BE /* CameraWindow.xib */,
 			);
 			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		83C754C114F91282009F86BE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				83C754C314F91460009F86BE /* DC1394DefaultFeature.h */,
+				83C754C414F91460009F86BE /* DC1394DefaultFeature.m */,
+				83C754C614F91484009F86BE /* DC1394TriggerFeature.h */,
+				83C754C714F91484009F86BE /* DC1394TriggerFeature.m */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		83C754C214F9128D009F86BE /* DC1394 */ = {
+			isa = PBXGroup;
+			children = (
+				83C754B814F8573A009F86BE /* DC1394.h */,
+				83C754B914F8573A009F86BE /* DC1394.m */,
+				83C754BE14F874AD009F86BE /* DC1394Feature.h */,
+				83C754BF14F874AD009F86BE /* DC1394Feature.m */,
+				83C754BB14F8575C009F86BE /* DC1394Camera.h */,
+				83C754BC14F8575C009F86BE /* DC1394Camera.m */,
+				83C754C114F91282009F86BE /* Features */,
+			);
+			name = DC1394;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,42 +363,6 @@
 			productReference = 8355AC3014F2DA9D007D4881 /* SERPlayerTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		83AB9AD114F3271200357901 /* SERPlayer2 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83AB9B0114F3271300357901 /* Build configuration list for PBXNativeTarget "SERPlayer2" */;
-			buildPhases = (
-				83AB9ACE14F3271200357901 /* Sources */,
-				83AB9ACF14F3271200357901 /* Frameworks */,
-				83AB9AD014F3271200357901 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SERPlayer2;
-			productName = SERPlayer2;
-			productReference = 83AB9AD214F3271200357901 /* SERPlayer2.app */;
-			productType = "com.apple.product-type.application";
-		};
-		83AB9AEE14F3271300357901 /* SERPlayer2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83AB9B0214F3271300357901 /* Build configuration list for PBXNativeTarget "SERPlayer2Tests" */;
-			buildPhases = (
-				83AB9AEA14F3271300357901 /* Sources */,
-				83AB9AEB14F3271300357901 /* Frameworks */,
-				83AB9AEC14F3271300357901 /* Resources */,
-				83AB9AED14F3271300357901 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				83AB9AF314F3271300357901 /* PBXTargetDependency */,
-			);
-			name = SERPlayer2Tests;
-			productName = SERPlayer2Tests;
-			productReference = 83AB9AEF14F3271300357901 /* SERPlayer2Tests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -312,8 +385,6 @@
 			targets = (
 				8355AC0E14F2DA9D007D4881 /* SERPlayer */,
 				8355AC2F14F2DA9D007D4881 /* SERPlayerTests */,
-				83AB9AD114F3271200357901 /* SERPlayer2 */,
-				83AB9AEE14F3271300357901 /* SERPlayer2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -323,11 +394,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8355AC4E14F2DAEC007D4881 /* VideoViewController.xib in Resources */,
 				83AB9B1614F329C900357901 /* Credits.rtf in Resources */,
 				83AB9B1714F329C900357901 /* Document.xib in Resources */,
 				83AB9B1814F329C900357901 /* InfoPlist.strings in Resources */,
 				83AB9B1914F329C900357901 /* MainMenu.xib in Resources */,
+				83C754B714F823D2009F86BE /* CameraWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,37 +410,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83AB9AD014F3271200357901 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83AB9AEC14F3271300357901 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		8355AC2E14F2DA9D007D4881 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		83AB9AED14F3271300357901 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,8 +436,14 @@
 				8355AC2014F2DA9D007D4881 /* main.m in Sources */,
 				8355AC2714F2DA9D007D4881 /* AppDelegate.m in Sources */,
 				8355AC4C14F2DAEC007D4881 /* VideoView.m in Sources */,
-				8355AC4D14F2DAEC007D4881 /* VideoViewController.m in Sources */,
 				83AB9B0C14F329B500357901 /* Document.m in Sources */,
+				83AB9B1C14F3DA8700357901 /* VideoControlsView.m in Sources */,
+				8314B25514F7E94600261754 /* VideoDocumentController.m in Sources */,
+				83C754BA14F8573A009F86BE /* DC1394.m in Sources */,
+				83C754BD14F8575C009F86BE /* DC1394Camera.m in Sources */,
+				83C754C014F874AD009F86BE /* DC1394Feature.m in Sources */,
+				83C754C514F91460009F86BE /* DC1394DefaultFeature.m in Sources */,
+				83C754C814F91484009F86BE /* DC1394TriggerFeature.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,20 +455,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83AB9ACE14F3271200357901 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83AB9AEA14F3271300357901 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -426,11 +462,6 @@
 			isa = PBXTargetDependency;
 			target = 8355AC0E14F2DA9D007D4881 /* SERPlayer */;
 			targetProxy = 8355AC3414F2DA9D007D4881 /* PBXContainerItemProxy */;
-		};
-		83AB9AF314F3271300357901 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 83AB9AD114F3271200357901 /* SERPlayer2 */;
-			targetProxy = 83AB9AF214F3271300357901 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -475,13 +506,21 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
+		83C754B514F823D2009F86BE /* CameraWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83C754B614F823D2009F86BE /* en */,
+			);
+			name = CameraWindow.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8355AC3F14F2DA9D007D4881 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
@@ -499,16 +538,25 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/libusb/1.0.19/lib/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
 		8355AC4014F2DA9D007D4881 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
@@ -520,8 +568,17 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/libusb/1.0.19/lib/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
@@ -531,6 +588,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SERPlayer/SERPlayer-Prefix.pch";
 				INFOPLIST_FILE = "SERPlayer/SERPlayer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/dc1394\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -542,6 +603,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SERPlayer/SERPlayer-Prefix.pch";
 				INFOPLIST_FILE = "SERPlayer/SERPlayer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/dc1394\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -575,56 +640,6 @@
 			};
 			name = Release;
 		};
-		83AB9AFD14F3271300357901 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SERPlayer2/SERPlayer2-Prefix.pch";
-				INFOPLIST_FILE = "SERPlayer2/SERPlayer2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		83AB9AFE14F3271300357901 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SERPlayer2/SERPlayer2-Prefix.pch";
-				INFOPLIST_FILE = "SERPlayer2/SERPlayer2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		83AB9AFF14F3271300357901 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SERPlayer2.app/Contents/MacOS/SERPlayer2";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SERPlayer2/SERPlayer2-Prefix.pch";
-				INFOPLIST_FILE = "SERPlayer2Tests/SERPlayer2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		83AB9B0014F3271300357901 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SERPlayer2.app/Contents/MacOS/SERPlayer2";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SERPlayer2/SERPlayer2-Prefix.pch";
-				INFOPLIST_FILE = "SERPlayer2Tests/SERPlayer2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -651,24 +666,6 @@
 			buildConfigurations = (
 				8355AC4514F2DA9D007D4881 /* Debug */,
 				8355AC4614F2DA9D007D4881 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		83AB9B0114F3271300357901 /* Build configuration list for PBXNativeTarget "SERPlayer2" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				83AB9AFD14F3271300357901 /* Debug */,
-				83AB9AFE14F3271300357901 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		83AB9B0214F3271300357901 /* Build configuration list for PBXNativeTarget "SERPlayer2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				83AB9AFF14F3271300357901 /* Debug */,
-				83AB9B0014F3271300357901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
